@@ -2,6 +2,17 @@
 [![Twitter](https://img.shields.io/twitter/follow/BigData_Europe.svg?style=social)](https://twitter.com/BigData_Europe)
 # Flink docker
 
+```
+### Standalone
+### https://github.com/torreswoo-docker/docker-flink-standalone
+$ ./build.sh
+$ docker-compose -f docker-compose.yml up
+$ docker exec -it flink-master /bin/bash
+> $FLINK_HOME/bin/start-scala-shell.sh yarn
+-> localhost:8081
+
+```
+
 Apache Flink docker images to:
 * Setup a standalone [Apache Flink](http://flink.apache.org/) cluster running one Flink Master and multiple Flink workers
 * Build Flink applications in Scala, Java or Python to run on a Flink cluster
